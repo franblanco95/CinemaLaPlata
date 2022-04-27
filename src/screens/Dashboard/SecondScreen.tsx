@@ -1,7 +1,11 @@
-import React from 'react';
-import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import React, {FC} from 'react';
+import {Text, TouchableOpacity, View} from 'react-native';
 
-const SecondScreen = ({navigation}) => {
+interface Props {
+  navigation: any;
+}
+
+const SecondScreen: FC<Props> = ({navigation}) => {
   return (
     <View>
       <Text>SecondScreen</Text>
@@ -13,5 +17,3 @@ const SecondScreen = ({navigation}) => {
 };
 
 export default SecondScreen;
-
-const styles = StyleSheet.create({});

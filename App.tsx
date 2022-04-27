@@ -1,16 +1,8 @@
-import React from 'react';
-import {StyleSheet} from 'react-native';
-import MainNavigator from './src/navigator';
+import React, {FC} from 'react';
+import AppNavigator from './src/navigation';
 
-const App = () => {
-  return <MainNavigator />;
+const App: FC = () => {
+  return <AppNavigator />;
 };
-
-const styles = StyleSheet.create({
-  backgroundStyle: {
-    flex: 1,
-    backgroundColor: 'red',
-  },
-});
 
 export default App;

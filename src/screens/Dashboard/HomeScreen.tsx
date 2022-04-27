@@ -1,10 +1,13 @@
+import React, {FC} from 'react';
 import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
-import React from 'react';
 
-const HomeScreen = ({navigation}) => {
+interface Props {
+  navigation: any;
+}
+const HomeScreen: FC<Props> = ({navigation}) => {
   return (
     <View>
-      <Text>HomeScreen</Text>
+      <Text style={styles.textStyle}>HomeScreen</Text>
       <TouchableOpacity onPress={() => navigation.navigate('Second')}>
         <Text>Go Second Screen</Text>
       </TouchableOpacity>
@@ -14,4 +17,8 @@ const HomeScreen = ({navigation}) => {
 
 export default HomeScreen;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  textStyle: {
+    color: 'red',
+  },
+});
