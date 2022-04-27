@@ -1,14 +1,9 @@
 import React from 'react';
-import {ScrollView, StyleSheet, Text} from 'react-native';
+import {StyleSheet} from 'react-native';
+import MainNavigator from './src/navigator';
 
 const App = () => {
-  return (
-    <ScrollView
-      contentInsetAdjustmentBehavior="automatic"
-      contentContainerStyle={styles.backgroundStyle}>
-      <Text>Testing</Text>
-    </ScrollView>
-  );
+  return <MainNavigator />;
 };
 
 const styles = StyleSheet.create({
